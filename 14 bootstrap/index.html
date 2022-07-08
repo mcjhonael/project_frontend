@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <style>
+      .fondo-rojo {
+        background-color: crimson;
+        color: white;
+      }
+      .fondo-azul {
+        background-color: darkcyan;
+        color: white;
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- la clase display-1 -> 5 = es para darle tamanio al contenido que esta dentro de la clase empiezar de grande a pequenio -->
+    <h1 class="display-1">Hola amiguitos</h1>
+    <p class="display-5">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima rerum
+      nemo deserunt laboriosam corporis architecto! Ratione deleniti, repellat,
+      harum eligendi saepe inventore maxime tempora voluptatum nesciunt impedit
+      beatae. Autem, nihil.
+    </p>
+
+    <!-- container-fluid = ocupa todo el ancho del navegador siempre va ser el 100% del navegador -->
+
+    <!-- si container osea la pantalla es:
+    < 576px = va ocupar el 100% de la pantalla >=576px =540px >=768px = 720px >=992 =960px
+    >=1200=1140px -->
+    <!-- el container es el 1er clase es la abarca todo el cuadrado desde el inicio -->
+    <!-- es como construir una tabla k tiene tr que son las filas y las columnas que son td (tr=row y td=col) -->
+
+    <main class="container-fluid">
+      <h3>Una fila <code>.row</code> con 4 columnas <code>.col</code></h3>
+      <!-- este row siempre ocupara el 100% del ancho de su padre y su alto dependera de su contenido y podra tener 12 columnas siempre como maximo ahora si estuviera dentro de una col ese seria su padre e igual tendra 12 subcol  -->
+      <div class="row">
+        <!-- un avez tenido esa creamos las columnas para poner el contenido ahora si va solo col ocupara entonces todo el ancho de su padre-->
+        <!-- aqui vemos 4 div en un row x lo tanto tendran los mismos cantidad de espacios -->
+        <div class="col fondo-rojo">Fila 1 Columna 1</div>
+        <div class="col fondo-azul">Fila 1 Columna 2</div>
+        <div class="col fondo-rojo">Fila 1 Columna 3</div>
+        <div class="col fondo-azul">Fila 1 Columna 4</div>
+      </div>
+      <hr />
+      <!-- en esta siguiente fila ya especificamos la cantidad que debe tener cada col siempre k no supere los 12 -->
+      <div class="row">
+        <div class="col-6 fondo-rojo">Fila 2 Columna 1</div>
+        <div class="col-2 fondo-azul">Fila 2 Columna 2</div>
+        <div class="col-2 fondo-rojo">Fila 2 Columna 3</div>
+        <div class="col-2 fondo-azul">Fila 2 Columna 4</div>
+      </div>
+      <hr />
+      <!-- en esta fila lo que aremos es dividir en col-4 y col-8 espacios -->
+      <div class="row">
+          <!-- columna de 4 espacios -->
+        <div class="col-4 fondo-rojo">Fila 3 Columna 1</div>
+        <!-- columnas de 8 espacios  pero estos espacios tendran 2 filas -->
+        <div class="col-8">
+            <!-- esta misma fila recuerda que ocupara todo el espacio de su padre que seria 8 espacios y dentro de esta fila vamos a divir en 2 partes iguales de 6 espacios cada uno -->
+          <div class="row">
+            <div class="col-6 fondo-azul">Columna interna arriba 1</div>
+            <div class="col-6 fondo-rojo">Columna interna arriba 2</div>
+          </div>
+          <!-- Esta misma fila lo vamos a dividir en partes iguales -->
+          <div class="row">
+            <div class="col-6 fondo-rojo">Columna interna abajo 1</div>
+            <div class="col-6 fondo-azul">Columna interna abajo 2</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

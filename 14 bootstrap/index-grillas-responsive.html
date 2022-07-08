@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+    <style>
+      .fondo-rojo {
+        background-color: crimson;
+        color: white;
+      }
+      .fondo-azul {
+        background-color: darkcyan;
+        color: white;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <!-- para los responsive las filas nunca van a cambiar sigue siendo asi pero lo que si va cambiar son las columnas para darle el espacio dependiendo del tamanio de la pantalla asi col-tamanio_de_pantalla - cantidad_de_espacios -->
+      <!-- 
+        xl = pantalla >=1200px
+        lg = pantalla >=992px
+        md = pantalla >=720px
+        sm = pantalla >=576px -->
+
+      <h4>
+        <code>.col-xl-[numero]</code> extra large - Las columnas colapsan osea
+        ocupara todo el ancho de su padre cuando la pantalla es menor a 1200px
+      </h4>
+      <div class="row">
+        <!-- esto dira cuando la pantalla >=1200px entonces le daron el espacio de 4 pero si no cumple entonces  cada col ocupara el 100% de su padre-->
+        <div class="col-xl-4 fondo-rojo">Columna 1</div>
+        <div class="col-xl-4 fondo-azul">Columna 2</div>
+        <div class="col-xl-4 fondo-rojo">Columna 3</div>
+      </div>
+      <hr />
+      <h4>
+        <code>.col-lg-[numero]</code> large - Las columnas colapsan osea ocupara
+        todo el ancho de su padre cuando el ancho de la pantalla es menor a
+        992px
+      </h4>
+      <div class="row">
+        <div class="col-lg-4 fondo-rojo">Columna 1</div>
+        <div class="col-lg-4 fondo-azul">Columna 2</div>
+        <div class="col-lg-4 fondo-rojo">Columna 3</div>
+      </div>
+      <hr />
+      <h4>
+        <code>.col-md-[numero]</code> medium - Las columnas colapsan osea
+        ocupara todo el ancho de su padre cuando el ancho de la pantalla es
+        menor a 768px
+      </h4>
+      <div class="row">
+        <div class="col-md-4 fondo-rojo">Columna 1</div>
+        <div class="col-md-4 fondo-azul">Columna 2</div>
+        <div class="col-md-4 fondo-rojo">Columna 3</div>
+      </div>
+      <hr />
+      <h4>
+        <code>.col-sm-[numero]</code> small - Las columnas colapsan osea ocupara
+        todo el ancho de su padre cuando el ancho de la pantalla es menor a
+        576px
+      </h4>
+      <div class="row">
+        <div class="col-sm-4 fondo-rojo">Columna 1</div>
+        <div class="col-sm-4 fondo-azul">Columna 2</div>
+        <div class="col-sm-4 fondo-rojo">Columna 3</div>
+      </div>
+      <hr />
+      <!-- este ejemplo es cuando es recontra responsivo para todos los tamanios -->
+      <!-- esto empieza asi 
+      cuando la pantalla sea mayor a md = 720px tendras espacios de 8 - 2 - 2
+      cuando la pantalla sea mayor a lg = 992px tendras espacios de 6 - 3 - 3
+      cuando la pantalla sea mayor a xl = 1200px tendras espacios de 4 - 4 - 4
+      asi van a estar distribuidas las columnas en diferentes tamanios 
+      ahora si la pantalla es inferior a 720px entonces colapsa y ocupara el 100% de su padre
+    -->
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-8 fondo-rojo">
+          Columna 1 (gráficos)
+        </div>
+        <div class="col-xl-4 col-lg-3 col-md-2 fondo-azul">Columna 2</div>
+        <div class="col-xl-4 col-lg-3 col-md-2 fondo-rojo">Columna 3</div>
+      </div>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+      integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

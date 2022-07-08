@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>realizando un formulario</title>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+      form {
+        height: 300px;
+        width: 500px;
+        margin: 0 auto;
+        padding: 20px 40px;
+        box-shadow: 0px 0px 10px #aaa;
+        border-radius: 10px;
+      }
+      .container{
+        height: 300px;
+        width: 500px;
+        margin: 40px auto;
+        padding: 20px 40px;
+        box-shadow: 0px 0px 10px #aaa;
+        border-radius: 10px;
+      }
+      .container table{
+          width: 100%;
+      }
+      form input {
+        width: 100%;
+        padding: 5px;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+      form button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: rgb(65, 226, 65);
+        color: white;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+      }
+      button:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Usando localStorage y sessionStorage</h1>
+    <!-- sirve la almacenar informacion en el navegador que cuando hagamos algo se almacene alli y cuando otra vez lo cierres y lo habres los datos sigues alli -->
+
+    <!-- ESTE PROYECTITO SE ENCARGA DE ALMACENAR CODIGO Y NOMBRE DE UN PRODUCTO Y CADA VEZ QUE LO AGREGEMOS QUE SEA MOSTRADO EN UNA LISTA DE TABLA -->
+    <form id="formulario">
+      <p>
+        <label for="">Codigo de Producto</label>
+        <input type="number" name="codigo" id="inputCodigo" />
+      </p>
+
+      <p>
+        <label for="">Nombre de Producto</label>
+        <input type="text" name="nombre" id="inputNombre" />
+      </p>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <hr />
+    <div class="container">
+        <table border="1px" id="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th><strong> Codigo </strong></th>
+              <th><strong>nombre</strong></th>
+            </tr>
+          </thead>
+    
+          <tbody id="tbody"></tbody>
+        </table>
+        <div class="mensaje" id="mensaje"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

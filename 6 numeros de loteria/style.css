@@ -1,0 +1,14 @@
+body{
+    background-color: #aaa;
+}
+h4{
+    color: white;
+}
+.item-color{
+    color: red;
+    cursor: pointer;
+}
+.item-color:hover{
+    font-size: 2rem;
+    color: blue;
+}

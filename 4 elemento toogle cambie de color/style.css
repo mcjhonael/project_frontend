@@ -1,0 +1,89 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#555
+}
+.botones{
+    padding: 5px;
+    height: 35px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.btnDark{
+    background-color:#aaa;
+    border: none;
+    color: rgb(244, 240, 240);
+    border-radius:4px;
+    padding: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnDark:hover{
+    background-color:#555;
+    border: 2px solid #333;
+    padding: 2px;
+    cursor: pointer;
+}
+.btnDarkHover{
+    background-color:rgb(48, 45, 45);
+    border: 2px solid #333;
+    width:200px;
+    height:200px;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+}
+ 
+.btnLight{
+    background-color: #444;
+    border: none;
+    padding: 4px;
+    color: #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnLight:hover{
+    background-color: rgb(206, 197, 197);
+    border: 2px solid rgb(239, 231, 231);
+    color:rgb(23, 21, 21);
+    padding: 2px;
+    
+}
+.btnLightHover{
+    background-color: rgb(206, 197, 197);
+    border: 2px solid rgb(239, 231, 231);
+    width:200px;
+    height:200px;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+
+}
+
+.btnToggle{
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnToggle:hover{
+    padding: 2px;
+    color: rgb(209, 204, 204);
+    border: 2px solid rgb(180, 134, 201);
+    background-color:rgb(152, 75, 75);
+}
+
+.contenedor{
+    width:200px;
+    height:200px;
+    border: 1px solid rgb(230, 187, 187);
+    border-radius: 4px;
+    margin: 20px auto 0 auto;
+}

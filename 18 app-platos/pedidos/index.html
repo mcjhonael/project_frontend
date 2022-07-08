@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="./img/logo.svg" alt="" />
+      </div>
+      <div class="header__buscador">
+        <img src="./img/search.svg" alt="" />
+        <input
+          type="text"
+          class="header__input"
+          placeholder="Busca un término"
+        />
+      </div>
+      <div class="header__usuario">
+        <img src="https://randomuser.me/api/portraits/men/90.jpg" alt="" />
+        <span>Jorge Garnica</span>
+      </div>
+    </header>
+    <main class="container">
+      <nav class="menu">
+        <ul class="menu__lista">
+          <li>
+            <img src="./img/plato_blanco.svg" alt="" />
+            <span>Bebidas</span>
+          </li>
+          <li>
+            <img src="./img/plato_blanco.svg" alt="" />
+            <span>Bebidas</span>
+          </li>
+          <li>
+            <img src="./img/plato_blanco.svg" alt="" />
+            <span>Bebidas</span>
+          </li>
+          <li>
+            <img src="./img/plato_blanco.svg" alt="" />
+            <span>Bebidas</span>
+          </li>
+        </ul>
+      </nav>
+      <section class="tabla">
+        <div class="mesas">
+          <ul class="mesas__lista" id="mesas__lista" hidden>
+            <!-- Aqui se llenan la lista de mesas dinámicamente -->
+            <!-- <li class="mesas__mesa">
+              <span class="mesas__titulo">Mesa</span>
+              <span class="mesas__numero">01</span>
+            </li> -->
+          </ul>
+          <div class="mesas__lista" id="cargandoMesas">
+            CARGANDO...
+          </div>
+          <div class="mesas__info"></div>
+        </div>
+        <div class="pedido">
+          <div class="carta">
+            <div class="carta__categorias" id="carta__categorias">
+              <!-- <button class="btn btn-outline-primary active">Comida</button>
+              <button class="btn btn-outline-primary">Bebida</button>
+              <button class="btn btn-outline-primary">Jugos</button>
+              <button class="btn btn-outline-primary">Postres</button> -->
+            </div>
+            <div class="carta__platos" id="carta__platos">
+              <!-- <div class="carta__plato">
+                    <img
+                      src="https://static.wixstatic.com/media/b3bc8c_e55132dac2f94941b8d0deeb56e04838~mv2.png/v1/fill/w_275,h_183,al_c,lg_1,q_90/b3bc8c_e55132dac2f94941b8d0deeb56e04838~mv2.webp"
+                      alt=""
+                    />
+                    <h4 class="carta__titulo">Arroz Chaufa de Pollo</h4>
+                    <span class="carta__precio">S/ 52.00</span>
+                  </div> -->
+            </div>
+          </div>
+          <div class="boleta">
+            <h3>Pedido</h3>
+            <div class="comanda" id="comanda">
+              <!-- <h4 class="comanda__mesa">Mesa 01</h4>
+              <p class="comanda__usuario">Carlos Jimenez</p>
+              <hr />
+              <ul class="comanda__lista">
+                <li class="comanda__item">
+                  <p class="comanda__nombre">
+                    <span><strong>Arroz Chaufa de Pollo</strong></span>
+                    <span>Precio: S/ 35.00</span>
+                  </p>
+                  <p class="comanda__cantidad">01</p>
+                  <p class="comanda__precio">
+                    <strong>S/ 35.00</strong>
+                  </p>
+                </li>
+              </ul> 
+              <button class="btn btn-outline-success">PAGAR</button>
+            --></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

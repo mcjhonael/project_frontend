@@ -1,0 +1,9 @@
+git = es un sistema de versionamiento de codigo
+
+* nosotros al versionar el codigo nos permite poder volver hacia atraz nuestro codigo
+
+* con el commit nosotros podemos registrar un punto en el tiempo para todos los archivos del proyecto
+
+* pull= verificar y descargar los cambios de un repositorio
+
+clone = clonar un repositorio externo

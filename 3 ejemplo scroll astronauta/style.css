@@ -1,0 +1,23 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+.header{
+    height:60px;
+    background:-webkit-linear-gradient(top,#444,#666)
+}
+.seccion1{
+    height:2000px;
+    color: #ddd;
+    width: 400px;
+    margin:0 auto;
+    background-color:#555;
+}
+.astronauta{
+    height:0px;
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}

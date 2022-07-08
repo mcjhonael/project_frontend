@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <!-- CDN CSS FLICKITY -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      ></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Dropdown</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Action 1</a>
+              <a class="dropdown-item" href="#">Action 2</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <main class="container">
+      <section class="row">Para la busqueda</section>
+      <section class="row">
+        <h2 class="text-light">Peliculas Populares</h2>
+        <hr />
+        <div class="col-12 mt-4">
+          <div class="main-carousel" id="contenedor-carrusel">
+            <!-- AQUI LA DATA SE LLEMA DINAMICAMENTE CREANDO LOS CARD -->
+          </div>
+        </div>
+      </section>
+      <!-- buscador -->
+      <section class="row mt-5 justify-content-center">
+        <form class="col-md-6">
+            <input
+              type="text"
+              id="input-buscador"
+              class="input-buscador"
+              placeholder="Buscar Pelicula"
+            />
+            <button class=" btn btn-outline-success">Buscar</button>
+        </form>
+      </section>
+      <!-- Resultados -->
+      <section class="row" id="resultados">
+        <!-- Se van a llenar dinamicamente -->
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- lo normal seria que debeamos hacer yu colocar aqui con el script cada uno de los archivo y se aria una fila de archivo   PERO NOOOOOOO-->
+    <!-- <script src="./js/variables.js"></script> -->
+    <!-- <script src="./js/funciones.js"></script> 
+    para hacerlo mas profesional usamos el type="module" pra ganar uso de esa caracteristica de js de q es exportar e importar
+    le colocamos export a todos los archivos k van hacer exportables y solamente el archivo k tenga type="module" va poder usar estoy archivos x eso a todos los archivos le ponemos export y solo el archivo principal k seria app.js va poder usar esas varibales o metodos
+-->
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

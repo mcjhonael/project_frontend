@@ -1,0 +1,12 @@
+body{
+    background-color: #ddd;
+}
+.container{
+    /* border: 1px solid red; */
+    width:400px;
+    height:120px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 20px #aaa;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
